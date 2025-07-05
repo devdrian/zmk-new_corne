@@ -4,6 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -32,6 +33,34 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        hmr_left: hmr_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <1 14 15 16 29 30 31 0 1 2 3 4 13 14 15 16 17 30 31 32 0 1 2 3 4 5 13 14 15 16 17 18 28 29 30 31 32 33 42 43 44>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+        };
+
+        hmr_right: hmr_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <7 8 9 10 11 12 22 23 24 25 26 27 36 37 38 39 40 41 45 46 47>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -54,10 +83,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                        &none         &kp Y        &kp U           &kp I      &kp O    &kp P     &kp SINGLE_QUOTE
-&kp ESC         &kp A  &kp S  &kp D      &kp F         &kp G                 &none  &none  &none  &kp H        &kp J           &kp K      &kp L    &kp SEMI  &kp BACKSPACE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B        &none           &none         &kp N        &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp TAB
-                              &kp LCTRL  &kp LEFT_GUI  &lt 1 SPACE                                &lt 2 ENTER  &kp LEFT_SHIFT  &kp RALT
+&kp TAB         &kp Q                 &kp W                     &kp E                 &kp R              &kp T                        &none         &kp Y        &kp U                &kp I                   &kp O                       &kp P                           &kp SINGLE_QUOTE
+&kp ESC         &hmr_left LEFT_ALT A  &hmr_left LEFT_CONTROL S  &hmr_left LEFT_GUI D  &hmr_left LSHFT F  &kp G                 &none  &none  &none  &kp H        &hmr_right RSHIFT J  &hmr_right RIGHT_GUI K  &hmr_right RIGHT_CONTROL L  &hmr_right RIGHT_ALT SEMICOLON  &kp BACKSPACE
+&kp LEFT_SHIFT  &kp Z                 &kp X                     &kp C                 &kp V              &kp B        &none           &none         &kp N        &kp M                &kp COMMA               &kp DOT                     &kp FSLH                        &kp TAB
+                                                                &kp LCTRL             &kp LEFT_GUI       &lt 1 SPACE                                &lt 2 ENTER  &kp LEFT_SHIFT       &kp RALT
             >;
         };
 
@@ -81,10 +110,10 @@
 
         Function {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                   &none         &none   &none   &none   &none  &none  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none            &none  &none  &none  &none   &none   &none   &none  &none  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &none           &none         &none   &none   &none   &none  &none  &trans
-                         &trans   &trans   &trans                                &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                   &none         &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none            &none  &none  &none  &none       &none         &none         &none         &none  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none   &none           &none         &none       &none         &none         &none         &none  &trans
+                         &trans   &trans   &trans                                &trans      &trans        &trans
             >;
         };
     };
