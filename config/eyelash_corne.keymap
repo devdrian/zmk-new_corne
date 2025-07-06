@@ -118,7 +118,7 @@
 
         NumNav {
             bindings = <
-&trans  &none   &kp N1                       &kp N2                           &kp N3                       &none                     &trans          &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &none      &none  &trans
+&trans  &none   &kp N1                       &kp N2                           &kp N3                       &none                     &trans          &kp C_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &none      &none  &trans
 &trans  &kp N0  &hmr_left LEFT_ALT NUMBER_4  &hmr_left LEFT_CONTROL NUMBER_5  &hmr_left LEFT_GUI NUMBER_6  &none             &trans  &trans  &trans  &kp LEFT          &kp DOWN      &kp UP        &kp RIGHT  &none  &trans
 &trans  &none   &kp N7                       &kp N8                           &kp N9                       &none   &trans            &trans          &kp C_PLAY_PAUSE  &kp C_PREV    &kp C_NEXT    &none      &none  &trans
                                              &trans                           &trans                       &trans                                    &trans            &trans        &trans
