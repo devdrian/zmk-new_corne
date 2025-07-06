@@ -109,7 +109,7 @@
 
         Symbolic {
             bindings = <
-&trans  &kp LS(LBRC)   &kp LS(RBRC)  &kp LBKT      &kp RBKT      &none                     &trans          &none   &kp SQT       &kp LS(PRCNT)  &none          &none         &trans
+&trans  &kp LS(LBRC)   &kp LS(RBRC)  &kp LBKT      &kp RBKT      &none                     &trans          &none   &kp STAR      &kp LS(PRCNT)  &none          &none         &trans
 &trans  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(LPAR)  &kp LS(RPAR)  &none             &trans  &trans  &trans  &none   &kp LS(PLUS)  &kp MINUS      &kp LS(UNDER)  &kp EQUAL     &trans
 &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(EXCL)  &kp LS(AT)    &none   &trans            &trans          &none   &kp GRAVE     &kp LS(TILDE)  &kp BSLH       &kp LS(PIPE)  &trans
                                      &trans        &trans        &trans                                    &trans  &trans        &trans
