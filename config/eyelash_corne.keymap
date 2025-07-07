@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -79,7 +79,7 @@
     #input-processor-cells = <2>;
     type = <INPUT_EV_REL>;
     codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-    track-remainders;
+    // track-remainders;
   };
 
     keymap {
