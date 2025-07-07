@@ -65,17 +65,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+#
-  - Sft+$
-  - Sft+(
-  - Sft+)
+  - {t: Sft+$, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Sft+(, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Sft+), h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft++
-  - {t: '-', s: _}
-  - Sft+_
+  - {t: +, h: RIGHT GUI}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
