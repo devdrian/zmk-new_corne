@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: 'Meh+$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - '&hyper_meh'
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -170,11 +170,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F13
-  - F14
-  - F15
-  - F16
-  - F17
+  - Hyper+F1
+  - Hyper+F2
+  - Hyper+F3
+  - Hyper+F4
+  - Hyper+F5
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F9
