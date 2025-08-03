@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HYPER_MEH";
             #binding-cells = <0>;
-            bindings = <&sk LS(LA(LC(LGUI)))>, <&sk LS(LA(LCTRL))>;
+            bindings = <&kp LS(LA(LC(LGUI)))>, <&kp LS(LA(LCTRL))>;
         };
     };
 
