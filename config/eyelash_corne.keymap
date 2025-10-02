@@ -83,7 +83,7 @@
 
             #binding-cells = <2>;
             hold-while-undecided;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <140>;
         };
     };
 
