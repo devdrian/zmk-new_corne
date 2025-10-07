@@ -119,7 +119,7 @@
             bindings = <
 &trans  &kp LS(LBRC)   &kp LS(RBRC)                   &kp LBKT                                     &kp RBKT                                  &none                     &trans          &none   &kp STAR                   &kp LS(PRCNT)                   &kp SINGLE_QUOTE            &kp LS(SINGLE_QUOTE)  &trans
 &trans  &kp LS(POUND)  &hmr_left LEFT_ALT LS(DOLLAR)  &hmr_left LEFT_CONTROL LS(LEFT_PARENTHESIS)  &hmr_left LEFT_GUI LS(RIGHT_PARENTHESIS)  &none             &trans  &trans  &trans  &none   &hmr_right RIGHT_GUI PLUS  &hmr_right RIGHT_CONTROL MINUS  &hmr_right RIGHT_ALT UNDER  &kp EQUAL             &trans
-&trans  &kp LS(CARET)  &kp LS(AMPS)                   &kp LS(EXCL)                                 &kp LS(AT)                                &none   &trans            &trans          &none   &kp GRAVE                  &kp LS(TILDE)                   &kp BSLH                    &kp LS(PIPE)          &trans
+&trans  &kp LS(CARET)  &kp LS(AMPS)                   &kp LS(EXCL)                                 &kp LS(AT)                                &none   &trans            &trans          &none   &kp GRAVE                  &kp LS(TILDE)                   &kp LS(BACKSLASH)           &kp BACKSLASH         &trans
                                                       &trans                                       &trans                                    &trans                                    &trans  &trans                     &trans
             >;
         };
