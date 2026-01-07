@@ -46,8 +46,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-space$$', h: Symbolic}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: NumNav}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', h: NumNav}
   - $$mdi:keyboard-tab$$
   Symbolic:
   - {t: '$$mdi:transfer$$', type: trans}
