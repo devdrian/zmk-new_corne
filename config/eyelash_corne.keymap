@@ -114,19 +114,7 @@
         // track-remainders;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        launcher {
-            bindings = <&kp F20>;
-            key-positions = <25 43>;
-        };
-
-        toggle-fullscreen {
-            bindings = <&kp F21>;
-            key-positions = <25 17>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
