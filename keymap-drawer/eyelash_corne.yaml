@@ -343,8 +343,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [25, 43]
-  k: F20
-- p: [25, 17]
-  k: F21
